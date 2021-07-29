@@ -7,10 +7,18 @@ list_tupples=[(1234,'john',23000,23),
               (1240,'anna',43000,45),
               (1241,'raju',53000,35),
               (1242,'emma',50000,49)]
-print(list_tupples)
+#print(list_tupples)
+s_list=[]
 sum=0
 for *others,salary,age in list_tupples:
     sum=sum+salary
     avg=sum/len(list_tupples)
-print(sum,avg)
+    s_list.append(salary)
+    f= lambda x,avg:x>avg
+    i=0
+
+for t in list_tupples:
+    if(f(s_list[i],avg)==True):
+        print(t)
+    i=i+1
 
