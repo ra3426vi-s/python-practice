@@ -22,3 +22,11 @@ for t in list_tupples:
         print(t)
     i=i+1
 
+fic={
+    'A':[1],
+    'B':[7]
+}
+fic['A'].append("rahul")
+fic['A'][0]="rak"
+
+print(fic['A'][0])
